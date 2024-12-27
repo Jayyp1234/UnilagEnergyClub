@@ -403,7 +403,7 @@
 }
 .v-footer .v-pre-main-footer {
   position: absolute;
-  top: -250px;
+  top: -50%;
   left: 0;
   right: 0;
 }
@@ -1068,7 +1068,7 @@
   color: rgba(21, 192, 119, 1);
   background-color: rgba(223, 254, 231, 1);
   border-radius: 10px;
-  font-size: .96rem;
+  font-size: 0.96rem;
 }
 #v-dashboard-wrapper .chart-container {
   width: 180px;
