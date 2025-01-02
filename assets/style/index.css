@@ -111,24 +111,30 @@
   align-items: center;
   gap: 3px;
 }
-.v-main-hero
-  .v-main-hero-content
-  .v-city-presentation
-  .v-social-links-icons
-  .v-icon-link {
+.v-main-hero .v-board-presentation {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url(../media/images/bg-theme.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.v-city-presentation-inner .v-subtitle {
+  color: rgba(233, 194, 2, 1);
+}
+.v-main-hero .v-social-links-icons .v-each-icon .v-icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   padding: 7px;
-  color: var(--social-icon-link-clr);
-  background-color: var(--social-icon-link-bg);
+  color: rgba(70, 70, 70, 1);
+  background-color: var(--white);
 }
-.v-city-presentation-inner {
-  z-index: 10;
-}
-.v-city-presentation-inner .v-subtitle {
-  color: rgba(233, 194, 2, 1);
+.v-main-hero .v-social-links-icons .v-each-icon .v-icon-link svg {
+  --size: 1.75em;
 }
 
 .v-our-member .v-member .v-detail-content {
