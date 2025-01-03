@@ -167,3 +167,6 @@ figure {
 	align-items: center;
 	justify-content: center;
 }
+#v-page-main {
+  overflow: hidden;
+}
