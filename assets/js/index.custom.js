@@ -80,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     focus: "center",
     gap: "1.25rem",
-    // rewind: true,
     autoplay: true,
     interval: 3000,
     pauseOnHover: true,
@@ -90,28 +89,74 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 1000,
     easing: "ease",
     breakpoints: {
-      1200: { perPage: 3.5 }, // Large devices
+      1200: {
+        perPage: 3.5,
+      },
       992: {
-        perPage: 3, // Medium screens (desktops, tablets)
+        perPage: 3,
         gap: "1rem",
       },
       768: {
         perMove: 1,
-        fixedWidth: "300px", // Adjust slide width for tablets
-        gap: "0.8rem",
+        autoWidth: true,
+        gap: "1rem",
+        focus: "center",
       },
       576: {
         perMove: 1,
-        fixedWidth: "260px", // Smaller fixed width for mobile devices
-        gap: "0.5rem",
+        autoWidth: true,
+        gap: "1rem",
+        focus: "center",
       },
       480: {
-        fixedWidth: "95vw", // Use 95% viewport width for very small screens
+        perPage: 1,
         gap: "1rem",
+        focus: "center",
       },
     },
   }).mount();
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   new Splide(".advisor-splide", {
+//     perPage: 3.5,
+//     type: "loop",
+//     focus: "center",
+//     gap: "1.25rem",
+//     // rewind: true,
+//     autoplay: true,
+//     interval: 3000,
+//     pauseOnHover: true,
+//     pauseOnFocus: true,
+//     arrows: false,
+//     pagination: false,
+//     speed: 1000,
+//     easing: "ease",
+//     breakpoints: {
+//       1200: {
+//         perPage: 3.5,
+//       },
+//       992: {
+//         perPage: 3,
+//         gap: "1rem",
+//       },
+//       768: {
+//         perMove: 1,
+//         fixedWidth: "300px",
+//         gap: "1rem",
+//       },
+//       576: {
+//         perMove: 1,
+//         fixedWidth: "260px",
+//         gap: "1rem",
+//       },
+//       480: {
+//         fixedWidth: "95vw",
+//         gap: "1rem",
+//       },
+//     },
+//   }).mount();
+// });
 
 const centerText = {
   id: 'centerText',

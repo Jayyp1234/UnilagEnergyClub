@@ -639,6 +639,19 @@
   object-fit: cover;
   border-radius: 8px;
 }
+.v-workers .splide__slide {
+  transform: scaleY(.8);
+  transition: all 0.3s ease-in-out;
+}
+.v-workers .splide__slide.is-active {
+  transform: none;
+  transition: all 0.3s ease-in-out;
+}
+.v-workers .splide__slide.is-prev,
+.v-workers .splide__slide.is-next {
+  transform: scaleY(.9);
+  transition: all 0.3s ease-in-out;
+}
 
 #about-page .v-footer {
   padding: 4rem 0 2rem;
