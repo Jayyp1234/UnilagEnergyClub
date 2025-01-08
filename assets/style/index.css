@@ -671,12 +671,12 @@
   font-weight: 700;
   width: max-content;
 }
-.v-footer .v-pre-main-footer {
+/* .v-footer .v-pre-main-footer {
   position: absolute;
   top: -250px;
   left: 0;
   right: 0;
-}
+} */
 .v-footer .social-icon a svg {
   --size: 1.5rem;
 }

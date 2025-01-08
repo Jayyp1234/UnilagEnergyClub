@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 3.5,
     type: "loop",
     focus: "center",
-    gap: "1.25rem",
+    gap: "2rem",
     autoplay: true,
     interval: 3000,
     pauseOnHover: true,
@@ -91,26 +91,27 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       1200: {
         perPage: 3.5,
+        gap: "2rem",
       },
       992: {
         perPage: 3,
-        gap: "1rem",
+        gap: "1.5rem",
       },
       768: {
         perMove: 1,
         autoWidth: true,
-        gap: "1rem",
+        gap: "1.5rem",
         focus: "center",
       },
       576: {
         perMove: 1,
         autoWidth: true,
-        gap: "1rem",
+        gap: "1.5rem",
         focus: "center",
       },
       480: {
         perPage: 1,
-        gap: "1rem",
+        gap: "1.5rem",
         focus: "center",
       },
     },
