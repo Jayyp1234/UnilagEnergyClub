@@ -43,7 +43,6 @@
       type="text/css"
       href="./assets/style/media-query.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 
     <title>Home</title>
   </head>
@@ -79,14 +78,7 @@
                   </svg>
                 </figure>
               </a>
-              <button
-                class="close-btn toggle-sidebar d-lg-none"
-                type="button"
-                data-bs-toggle="offcanvas"
-                href="#offcanvasExample"
-                aria-controls="offcanvasExample"
-                aria-expanded="false"
-              >
+              <button class="close-btn toggle-sidebar d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar" class="v-sidebar-toggler v-main-text d-flex align-items-center justify-content-center d-lg-none">
                 <svg
                   class="svg-color"
                   xmlns="http://www.w3.org/2000/svg"
@@ -296,8 +288,8 @@
                       </div>
                     </div>
                     <div class="">
-                      <div class="row">
-                        <div class="col-lg-4">
+                      <div class="row row-gap-4">
+                        <div class="col-sm-6 col-lg-4">
                           <div
                             class="card"
                             style="
@@ -385,7 +377,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-sm-6 col-lg-4">
                           <div
                             class="card"
                             style="
@@ -473,7 +465,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-sm-6 col-lg-4">
                           <div
                             class="card"
                             style="
@@ -906,12 +898,12 @@
 
       <!-- sidebar @::start -->
       <div
-        class="offcanvas offcanvas-start sidebar-nav"
+        class="offcanvas offcanvas-start "
         tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
+        id="sideBar"
+        aria-labelledby="sideBarLabel"
       >
-        <div class="offcanvas-body sidebar-body">
+        <div class="offcanvas-body">
           <div class="h-100 d-flex flex-column row-gap-4">
             <figure
               role="img"
@@ -942,7 +934,7 @@
                 <div class="v-sidebar-items">
                   <ul class="sidebar-item d-flex flex-column row-gap-4">
                     <li class="sidebar-list">
-                      <a class="sidebar-link active" href="">
+                      <a class="sidebar-link active" href="#">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -962,7 +954,7 @@
                       </a>
                     </li>
                     <li class="sidebar-list">
-                      <a class="sidebar-link" href="">
+                      <a class="sidebar-link" href="meeting.html">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="512"
@@ -1068,7 +1060,7 @@
       src="./assets/js/splide-extension-auto-scroll.min.js"
       defer
     ></script>
-    <script src="./assets/js/chartjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <script
       type="text/javascript"
       src="./assets/js/index.custom.js"

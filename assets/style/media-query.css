@@ -44,13 +44,10 @@
   #v-dashboard-wrapper .v-main {
     margin-left: var(--offcanvas-width);
   }
-  #v-dashboard-wrapper .offcanvas-backdrop {
-    display: none;
-  }
   #v-dashboard-wrapper  .v-sidebar-item {
     height: 100% !important;
   }
-  #v-dashboard-wrapper .sidebar-nav {
+  #v-dashboard-wrapper .offcanvas {
     transform: none;
     visibility: visible;
     margin-top: var(--topNavbarHeight);

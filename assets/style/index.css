@@ -98,11 +98,11 @@
   left: -27%;
 }
 .v-main-hero-content .v-each-float-2 {
-  top: 10%;
-  right: -28%;
+  top: 15%;
+  right: -30%;
 }
 .v-main-hero-content .v-each-float-3 {
-  top: 55%;
+  top: 65%;
   right: -17%;
 }
 .v-main-hero .v-main-hero-content .v-city-presentation .v-social-links-icons {
@@ -863,12 +863,12 @@
   --offcanvas-width: 250px;
   --topNavbarHeight: 80px;
 }
-#v-dashboard-wrapper .sidebar-nav {
+#v-dashboard-wrapper .offcanvas {
   border-right: none;
   width: var(--offcanvas-width);
   background-color: #fcfcfc;
 }
-#v-dashboard-wrapper .sidebar-body {
+#v-dashboard-wrapper .offcanvas-body {
   border: 1px solid rgba(232, 194, 3, 1);
   background-color: rgba(250, 250, 250, 1);
   border-radius: 5px;
@@ -883,6 +883,19 @@
   gap: 10px;
   color: var(--dark);
   font-size: 1.1rem;
+}
+#v-dashboard-wrapper .sidebar-link:hover {
+  color: var(--white);
+  background-color: rgba(233, 194, 2, 1);
+}
+#v-dashboard-wrapper .sidebar-link:hover svg path {
+  stroke: var(--white);
+  --size: 1.75rem;
+}
+#v-dashboard-wrapper .sidebar-link.s:hover svg path {
+  fill: var(--white);
+  stroke: var(--white);
+  --size: 1.75rem;
 }
 #v-dashboard-wrapper .sidebar-link.active {
   color: var(--white);
