@@ -12,7 +12,10 @@
   
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 576px) {
+  .v-footer .v-pre-main-footer {
+    top: -60%;
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -24,7 +27,7 @@
     padding: 9rem 0 2rem;
   }
   .v-footer .v-pre-main-footer {
-    top: -180px;
+    top: -50%;
   }
 }
 
@@ -33,7 +36,7 @@
     padding: 10rem 0 2rem;
   }
   .v-footer .v-pre-main-footer {
-    top: -200px;
+    top: -50%;
   }
 }
 
@@ -54,6 +57,9 @@
     height: calc(100% - var(--topNavbarHeight));
     background-color: transparent;
     padding: 1rem;
+  }
+  .v-footer .v-pre-main-footer {
+    top: -80%;
   }
 }
 
