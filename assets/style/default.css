@@ -32,7 +32,6 @@
 	--primary-clr: rgba(var(--primary-clr-variant), 1);
 	--primary-clr-dark: rgb(45, 42, 24);
 
-
 	/* themes */
 	--page-bg-variant: rgba(250, 250, 250, 1); /* Add a default value */
 	--section-bg-1: 233, 194, 2;
@@ -65,7 +64,7 @@
 	-webkit-font-smoothing: antialiased;
 }
 body {
-  /* background-color: rgba(var(--section-bg-1), 1); */
+	/* background-color: rgba(var(--section-bg-1), 1); */
 }
 h1,
 h2,
@@ -166,7 +165,4 @@ figure {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-#v-page-main {
-  overflow: hidden;
 }

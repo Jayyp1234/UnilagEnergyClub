@@ -18,12 +18,10 @@
 }
 
 @media all and (min-width: 768px) {
-	.v-footer {
-		padding: 9rem 0 2rem;
-	}
 	.v-workers .v-content-holder .v-content-image {
 		height: 450px;
-		width: 300px;
+		min-width: 280px;
+		max-width: 280px;
 	}
 	.v-workers .v-each-content-wrapper {
 		padding: 3rem;
@@ -34,10 +32,6 @@
 }
 
 @media all and (min-width: 800px) {
-	.v-footer {
-		padding: 10rem 0 2rem;
-	}
-
 	.v-workers .v-each-content-wrapper {
 		padding: 3rem 4rem;
 	}
@@ -61,9 +55,17 @@
 		background-color: transparent;
 		padding: 1rem;
 	}
+	.v-footer .v-lg-icon-wrapper svg {
+		--size: 30rem;
+		transform: scale(1.2);
+	}
 }
 
 @media all and (min-width: 1024px) {
+	.v-footer .v-as-banner-content .v-title {
+		font-size: 3.5rem;
+		text-wrap: balance;
+	}
 }
 
 @media all and (min-width: 1200px) {
@@ -105,6 +107,16 @@
 }
 
 @media all and (max-width: 650px) {
+	.v-footer .v-lg-icon-wrapper {
+		/* margin-bottom: -4rem;
+		transform: scale(1.1); */
+		margin-bottom: -7rem;
+		transform: scale(1.1);
+		margin-right: -78%;
+		opacity: 30%;
+		margin-top: -10rem;
+		pointer-events: none;
+	}
 }
 
 @media all and (max-width: 500px) {
