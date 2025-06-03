@@ -65,7 +65,7 @@
                     <div class="row text-start g-4">
                       <div class="col-6">
                         <p class="text-muted mb-1">Payment ID</p>
-                        <p class="fw-bold mb-0" id="paymentId">UEC-2024-001</p>
+                        <p class="fw-bold mb-0" id="paymentId"></p>
                       </div>
                       <div class="col-6">
                         <p class="text-muted mb-1">Amount Paid</p>
@@ -83,7 +83,7 @@
                   </div>
 
                   <div class="d-grid gap-2">
-                    <a href="/dashboard.html" class="btn btn-lg" style="background-color: rgba(233, 194, 2, 1); color: #fff;">
+                    <a href="#" class="btn btn-lg" style="background-color: rgba(233, 194, 2, 1); color: #fff;">
                       Go to Dashboard
                     </a>
                     <button onclick="window.print()" class="btn btn-outline-secondary btn-lg">
@@ -102,6 +102,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      
+      // Generate payment ID
+      function generatePaymentId() {
+        const year = new Date().getFullYear();
+        const randomNum = Math.floor(Math.random() * 100000).toString().padStart(6, '0');
+        return `UEC-${year}-${randomNum}`;
+      }
+
+      // Set payment ID
+      document.getElementById('paymentId').textContent = generatePaymentId();
       
       // Set current date
       const now = new Date();
